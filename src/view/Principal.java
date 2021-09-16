@@ -31,7 +31,7 @@ public class Principal {
 				System.out.println("Informe a operação: ");
 				try {
 					String operacao = scan.next();
-					calc.npr(pilha, operacao);
+					pilha.push(calc.npr(pilha, operacao));
 				} catch (Exception e) {
 					e.printStackTrace();
 				} 
